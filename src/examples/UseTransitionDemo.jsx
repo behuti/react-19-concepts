@@ -10,7 +10,7 @@ const posts = Array.from({ length: 10000 }, (_, i) => ({
 
 function searchPosts(query) {
   return posts.filter(
-    (p) => p.title.includes(query) || p.body.includes(query)
+    (post) => post.title.includes(query) || post.body.includes(query)
   )
 }
 
@@ -59,11 +59,11 @@ export default function UseTransitionDemo() {
       </div>
 
       <div style={{ maxHeight: 300, overflow: 'auto' }}>
-        {results.slice(0, 50).map((p) => (
-          <div key={p.id} className={styles.listItem}>
-            <span>{p.title}</span>
+        {results.slice(0, 50).map((post) => (
+          <div key={post.id} className={styles.listItem}>
+            <span>{post.title}</span>
             <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>
-              {p.body.slice(0, 40)}...
+              {post.body.slice(0, 40)}...
             </span>
           </div>
         ))}
