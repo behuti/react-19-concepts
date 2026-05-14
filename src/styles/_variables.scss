@@ -1,0 +1,31 @@
+$bg: #0f0f1a;
+$surface: #1a1a2e;
+$surface-hover: #252542;
+$border: #2a2a4a;
+$text: #e0e0f0;
+$text-muted: #8888aa;
+$accent: #7c5cfc;
+$accent-hover: #6b4de6;
+$green: #4ade80;
+$orange: #fb923c;
+$pink: #f472b6;
+$blue: #60a5fa;
+$radius: 10px;
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$mono-font: 'SF Mono', 'Fira Code', monospace;
+
+:root {
+  --bg: #{$bg};
+  --surface: #{$surface};
+  --surface-hover: #{$surface-hover};
+  --border: #{$border};
+  --text: #{$text};
+  --text-muted: #{$text-muted};
+  --accent: #{$accent};
+  --accent-hover: #{$accent-hover};
+  --green: #{$green};
+  --orange: #{$orange};
+  --pink: #{$pink};
+  --blue: #{$blue};
+  --radius: #{$radius};
+}

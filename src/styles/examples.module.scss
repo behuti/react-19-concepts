@@ -1,0 +1,237 @@
+@use 'variables' as *;
+
+.fileRef {
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  font-family: $mono-font;
+  background: rgba(124, 92, 252, 0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.statusMsg {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.success {
+  color: var(--green);
+}
+
+.error {
+  color: var(--pink);
+}
+
+.pending {
+  color: var(--orange);
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.optimistic {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.formStatusBar {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.metaDemo {
+  h3 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin: 1.5rem 0 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hookCard {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(42, 42, 74, 0.5);
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.hookTitle {
+  color: var(--blue);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-family: $mono-font;
+}
+
+.hookDesc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.stepCard {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: var(--accent);
+  }
+}
+
+.stepActive {
+  border-color: var(--accent);
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.stepToggle {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.stepBody {
+  padding: 0 1rem 0.75rem 3.25rem;
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+
+.qaCategory {
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.qaCategoryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  user-select: none;
+
+  h3 {
+    font-size: 1rem;
+    color: var(--accent);
+    margin: 0;
+  }
+
+  span {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.qaList {
+  border-top: 1px solid var(--border);
+}
+
+.qaItem {
+  border-bottom: 1px solid rgba(42, 42, 74, 0.4);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.qaQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text);
+  transition: background 0.15s;
+
+  &:hover {
+    background: rgba(124, 92, 252, 0.05);
+  }
+}
+
+.qaToggle {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.qaAnswer {
+  padding: 0 1rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
